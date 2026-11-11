@@ -1,0 +1,127 @@
+<!--
+  SpaceHey profile code for [YOUR NAME]'s garden.
+  HOW TO USE: SpaceHey → Edit Profile → paste EVERYTHING below into the "About me" box → Save.
+  (SpaceHey allows HTML + CSS in profile fields, but no JavaScript or iframes.
+   The interactive parts live on the website; this styles your profile to match and links to it.)
+  Replace the [brackets] with your own words.
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Nunito:wght@400;700;800&family=Amiri&display=swap');
+
+/* ---------- page ---------- */
+body {
+  background-color: #FFF6F0 !important;
+  background-image:
+    radial-gradient(circle at 25% 25%, #FFF6F0 9px, transparent 10px),
+    radial-gradient(circle at 75% 75%, #FFF6F0 9px, transparent 10px),
+    linear-gradient(45deg, #F6D3DC 25%, #D3EBD9 25%, #D3EBD9 50%, #F6D3DC 50%, #F6D3DC 75%, #D3EBD9 75%) !important;
+  background-size: 72px 72px !important;
+  font-family: 'Nunito', sans-serif !important;
+  color: #4A3442 !important;
+}
+main, .container, footer {
+  background: #FFF6F0 !important;
+  border-radius: 24px !important;
+}
+main { padding: 18px !important; box-shadow: 0 0 0 4px #E58FA6, 0 10px 0 4px #9CCBA8 !important; }
+a, a:visited { color: #A3405F !important; }
+a:hover { color: #2F6B45 !important; }
+
+/* ---------- top nav ---------- */
+nav .top, nav .links { background: #E58FA6 !important; }
+nav .links a { color: #FFFFFF !important; font-family: 'Pixelify Sans', monospace !important; }
+
+/* ---------- headings & boxes ---------- */
+h1, h2, h3, h4, .heading, .profile .heading {
+  font-family: 'Pixelify Sans', monospace !important;
+  letter-spacing: .5px;
+}
+.profile .heading, .heading {
+  background: #9CCBA8 !important;
+  color: #FFFFFF !important;
+  border-radius: 14px 14px 0 0 !important;
+  padding: 8px 14px !important;
+}
+.profile .contact, .profile .url-info, .profile .table-section, .profile .blurbs,
+.profile .friends, .profile .blog-preview, .profile .comments, .contact, .url-info,
+.table-section, .blurbs, .friends {
+  background: #FFFFFF !important;
+  border: 3px solid #F6D3DC !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+.profile .contact .heading, .contact .heading { background: #E58FA6 !important; }
+.profile .blurbs .heading, .blurbs .heading { background: #B7A6E3 !important; }
+.profile .friends .heading, .friends .heading { background: #E58FA6 !important; }
+table td { border-color: #F6D3DC !important; }
+.profile .table-section td:first-child, .details-table td:first-child {
+  background: #FBDCE4 !important; color: #7A2A45 !important; font-weight: 800;
+}
+
+/* ---------- profile picture & friends ---------- */
+.profile-pic img, .profile .profile-pic img {
+  border-radius: 60px 60px 14px 14px !important;
+  border: 4px solid #F6D3DC !important;
+  box-shadow: 0 0 0 3px #9CCBA8 !important;
+}
+.friends-grid img, .friends img {
+  border-radius: 999px 999px 10px 10px !important;
+  border: 3px solid #FFFFFF !important;
+  box-shadow: 0 0 0 2px #E58FA6 !important;
+}
+
+/* ---------- my own blocks (used below) ---------- */
+.garden-card {
+  background: #FFFFFF; border: 4px solid #4A3442; border-radius: 18px;
+  padding: 20px 22px; box-shadow: 0 6px 0 #F6D3DC; margin: 6px 0 18px;
+}
+.garden-name {
+  display: inline-block; background: #E58FA6; color: #FFFFFF; font-family: 'Pixelify Sans', monospace;
+  font-size: 17px; padding: 4px 14px; border-radius: 10px; margin-bottom: 10px;
+}
+.garden-btn {
+  display: inline-block; background: #A3405F; color: #FFFFFF !important; text-decoration: none !important;
+  font-family: 'Pixelify Sans', monospace; font-size: 18px; padding: 12px 22px; border-radius: 14px;
+  box-shadow: 0 4px 0 #9CCBA8; margin: 6px 6px 6px 0;
+}
+.garden-btn:hover { background: #2F6B45; }
+.garden-btn.mint { background: #2F6B45; box-shadow: 0 4px 0 #F6D3DC; }
+.garden-shelf { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.garden-shelf span {
+  background: #FBDCE4; border-radius: 30px 30px 10px 10px; padding: 10px 14px; font-size: 13px; line-height: 1.35;
+}
+.garden-shelf span:nth-child(3n+2) { background: #D3EBD9; }
+.garden-shelf span:nth-child(3n) { background: #EEE8FA; }
+.garden-ar { font-family: 'Amiri', serif; font-size: 20px; color: #A3405F; }
+</style>
+
+<div class="garden-card">
+  <span class="garden-name">[YOUR NAME]</span>
+  <p>Hi hi! Welcome in — take your shoes off, there's tea on the stove and tiramisu in the fridge.
+  [Write a few lines about yourself: where your family's from, what you're learning, what's making you happy lately.]</p>
+  <p class="garden-ar">أهلاً وسهلاً · hoş geldiniz</p>
+  <p><b>Mood:</b> tiramisu-level sweet · <b>Club Penguin veteran</b> since the iceberg was untippable</p>
+</div>
+
+<p><b>✿ My whole garden lives here, with the habit bakery, seal cove, prayer lanterns and more:</b></p>
+<p>
+  <a class="garden-btn" href="https://farah-abulibdeh.github.io/spacehey-blog/">Visit my garden ✿</a>
+  <a class="garden-btn mint" href="https://farah-abulibdeh.github.io/spacehey-blog/cove.html">Leave a note in Seal Cove</a>
+</p>
+
+<p><b>Today's display case</b> (my interests, freshly baked):</p>
+<div class="garden-shelf">
+  <span><b>Kingdom Hearts mille-feuille</b><br>a thousand emotional layers ♥</span>
+  <span><b>Rose lokum</b><br>Ottoman, pastel, powdered</span>
+  <span><b>Showstopper soufflé</b><br>musicals, rises on cue</span>
+  <span><b>Objection éclairs</b><br>Ace Attorney</span>
+  <span><b>Pistachio ma'amoul</b><br>green, obviously</span>
+  <span><b>Smiling Friends cupcakes</b><br>suspiciously cheerful</span>
+  <span><b>Sugar calaveras</b><br>Grim Fandango</span>
+  <span><b>Garden Wall pumpkin bread</b><br>autumnal &amp; spooky</span>
+  <span><b>Adventure Time candy</b><br>from a pink kingdom</span>
+  <span><b>Big Walk trail mix</b><br>+ Poco petits fours</span>
+  <span><b>Northern-town pasty</b><br>Thank Goodness You're Here</span>
+  <span><b>Tiramisu</b><br>forever #1. not up for debate</span>
+</div>
+<p>…plus seals, cats, pixel art, AI and a lot of pink &amp; green.</p>
