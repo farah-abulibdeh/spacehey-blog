@@ -9,8 +9,9 @@ shows, games and Club Penguin memories.
 - `index.html`, `blog.html`, `habits.html`, `cove.html`, `athan.html`, `playbill.html`: the pages
 - `garden.js`: the small script that makes the interactive parts work
 
-No build step: open `index.html` in a browser, or host the folder on GitHub Pages
-(Settings → Pages → Deploy from branch → `main` / root).
+No build step: open `index.html` in a browser. Hosted on Neocities: upload all the
+`.html` files and `garden.js` to the root of your Neocities site (Dashboard → drag and drop).
+`index.html` becomes your homepage.
 
 Habit checks, tasbih counts, likes and Seal Cove notes are saved in each visitor's own browser.
 
