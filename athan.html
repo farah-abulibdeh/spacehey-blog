@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Athan — the courtyard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="[YOUR NAME]'s pastel Ottoman garden: habits, prayer lanterns, seals, musicals and more.">
+<style>x-dc{display:none}</style>
+<script src="garden.js" defer></script>
+</head>
+<body data-page="athan">
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&amp;family=Nunito:wght@400;600;700;800&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFF6F0}
+a{color:#A3405F}a:hover{color:#7A2A45}
+.px{font-family:'Pixelify Sans',monospace}
+.pill{font-family:'Pixelify Sans',monospace;font-size:16px;min-height:44px;padding:0 16px;display:flex;align-items:center;border-radius:14px 14px 0 0;background:rgba(255,246,240,.72);color:#4A3442;text-decoration:none}
+.pill:hover{background:#FFF6F0;color:#A3405F}
+.pill.on{background:#FFF6F0;color:#A3405F;box-shadow:inset 0 -4px 0 #9CCBA8}
+.btn{font-family:'Pixelify Sans',monospace;font-size:16px;min-height:44px;padding:0 20px;border:none;border-radius:14px;color:#FFFFFF;cursor:pointer;box-shadow:0 4px 0 rgba(74,52,66,.35)}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(74,52,66,.35)}
+.field{font-family:'Nunito',sans-serif;font-size:15px;color:#4A3442;background:#FFFFFF;border:2px solid #E3B9C6;border-radius:14px;padding:10px 14px;min-height:44px;box-sizing:border-box;width:100%}
+.field:focus{outline:3px solid #CFE3D2;border-color:#E58FA6}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.lantern{display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 8px 14px;border:none;border-radius:0 0 20px 20px;background:transparent;color:#F6F0E8;cursor:pointer;font-family:'Nunito',sans-serif;min-height:44px}
+.lantern:hover{background:rgba(255,246,240,.06)}
+.lantern.past{opacity:.75}
+.lantern.next{color:#FFE3A8}
+.lantern.next svg{filter:drop-shadow(0 0 14px #FFD27A)}
+.lantern.bell{box-shadow:inset 0 -3px 0 #F2A7B8}
+.cove{}
+.bead{width:18px;height:18px;border-radius:50%;background:#F1EAE4;border:2px solid #E3D6CC;transition:background .2s}
+.bead.on.r0{background:#E58FA6;border-color:#C96F88}
+.bead.on.r1{background:#7FB08C;border-color:#5E9A6E}
+.bead.on.r2{background:#FFD27A;border-color:#E9B949}
+.ghost{font-family:'Nunito',sans-serif;font-weight:700;font-size:15px;min-height:44px;padding:0 18px;border-radius:14px;border:2px solid #E3B9C6;background:#FFFFFF;color:#A3405F;cursor:pointer}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #FFF6F0; font-family: 'Nunito', sans-serif; color: #4A3442">
+<header style="position: relative; background: #F6D3DC; overflow: hidden; border-bottom: 6px solid #E58FA6; box-shadow: 0 6px 0 #9CCBA8">
+<svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0">
+<defs>
+<pattern id="iznik" width="72" height="72" patternUnits="userSpaceOnUse">
+<rect width="72" height="72" fill="#F6D3DC"></rect>
+<rect x="36" y="0" width="36" height="36" fill="#D3EBD9"></rect>
+<rect x="0" y="36" width="36" height="36" fill="#D3EBD9"></rect>
+<rect x="20" y="20" width="32" height="32" fill="#FFF6F0" opacity=".9"></rect><rect x="20" y="20" width="32" height="32" fill="#FFF6F0" opacity=".9" transform="rotate(45 36 36)"></rect>
+<circle cx="36" cy="36" r="6" fill="#E58FA6"></circle>
+<circle cx="36" cy="36" r="2.5" fill="#7FB08C"></circle>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#iznik)"></rect>
+</svg>
+<div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 40px 24px 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<div style="background: #FFF6F0; border-radius: 22px; padding: 16px 26px; display: flex; flex-direction: column; gap: 4px; box-shadow: 0 6px 0 rgba(74,52,66,.12)">
+<span class="px" style="font-size: 13px; letter-spacing: 2px; color: #2F6B45">THE COURTYARD</span>
+<span class="px" style="font-size: 40px; line-height: 1; color: #4A3442">[YOUR NAME]'s garden</span>
+<span lang="ar" style="font-family: 'Amiri', serif; font-size: 20px; color: #A3405F">أهلاً وسهلاً · hoş geldiniz</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-end"><svg aria-hidden="true" width="28" height="40" viewBox="0 0 28 40" shape-rendering="crispEdges" style="display: block"><rect x="12" y="0" width="4" height="4" fill="#7A5A12"></rect><rect x="12" y="4" width="4" height="4" fill="#7A5A12"></rect><rect x="8" y="8" width="4" height="4" fill="#7A5A12"></rect><rect x="12" y="8" width="4" height="4" fill="#7A5A12"></rect><rect x="16" y="8" width="4" height="4" fill="#7A5A12"></rect><rect x="4" y="12" width="4" height="4" fill="#7A5A12"></rect><rect x="8" y="12" width="4" height="4" fill="#FFD27A"></rect><rect x="12" y="12" width="4" height="4" fill="#FFD27A"></rect><rect x="16" y="12" width="4" height="4" fill="#FFD27A"></rect><rect x="20" y="12" width="4" height="4" fill="#7A5A12"></rect><rect x="0" y="16" width="4" height="4" fill="#7A5A12"></rect><rect x="4" y="16" width="4" height="4" fill="#FFD27A"></rect><rect x="8" y="16" width="4" height="4" fill="#FFD27A"></rect><rect x="12" y="16" width="4" height="4" fill="#FFF6F0"></rect><rect x="16" y="16" width="4" height="4" fill="#FFD27A"></rect><rect x="20" y="16" width="4" height="4" fill="#FFD27A"></rect><rect x="24" y="16" width="4" height="4" fill="#7A5A12"></rect><rect x="0" y="20" width="4" height="4" fill="#7A5A12"></rect><rect x="4" y="20" width="4" height="4" fill="#FFD27A"></rect><rect x="8" y="20" width="4" height="4" fill="#FFD27A"></rect><rect x="12" y="20" width="4" height="4" fill="#FFF6F0"></rect><rect x="16" y="20" width="4" height="4" fill="#FFD27A"></rect><rect x="20" y="20" width="4" height="4" fill="#FFD27A"></rect><rect x="24" y="20" width="4" height="4" fill="#7A5A12"></rect><rect x="0" y="24" width="4" height="4" fill="#7A5A12"></rect><rect x="4" y="24" width="4" height="4" fill="#FFD27A"></rect><rect x="8" y="24" width="4" height="4" fill="#FFD27A"></rect><rect x="12" y="24" width="4" height="4" fill="#FFD27A"></rect><rect x="16" y="24" width="4" height="4" fill="#FFD27A"></rect><rect x="20" y="24" width="4" height="4" fill="#FFD27A"></rect><rect x="24" y="24" width="4" height="4" fill="#7A5A12"></rect><rect x="4" y="28" width="4" height="4" fill="#7A5A12"></rect><rect x="8" y="28" width="4" height="4" fill="#FFD27A"></rect><rect x="12" y="28" width="4" height="4" fill="#FFD27A"></rect><rect x="16" y="28" width="4" height="4" fill="#FFD27A"></rect><rect x="20" y="28" width="4" height="4" fill="#7A5A12"></rect><rect x="8" y="32" width="4" height="4" fill="#7A5A12"></rect><rect x="12" y="32" width="4" height="4" fill="#7A5A12"></rect><rect x="16" y="32" width="4" height="4" fill="#7A5A12"></rect><rect x="12" y="36" width="4" height="4" fill="#7A5A12"></rect></svg><svg aria-hidden="true" width="42" height="42" viewBox="0 0 42 42" shape-rendering="crispEdges" style="display: block"><rect x="12" y="0" width="6" height="6" fill="#E9B949"></rect><rect x="18" y="0" width="6" height="6" fill="#E9B949"></rect><rect x="24" y="0" width="6" height="6" fill="#E9B949"></rect><rect x="6" y="6" width="6" height="6" fill="#E9B949"></rect><rect x="12" y="6" width="6" height="6" fill="#E9B949"></rect><rect x="0" y="12" width="6" height="6" fill="#E9B949"></rect><rect x="6" y="12" width="6" height="6" fill="#E9B949"></rect><rect x="0" y="18" width="6" height="6" fill="#E9B949"></rect><rect x="6" y="18" width="6" height="6" fill="#E9B949"></rect><rect x="0" y="24" width="6" height="6" fill="#E9B949"></rect><rect x="6" y="24" width="6" height="6" fill="#E9B949"></rect><rect x="6" y="30" width="6" height="6" fill="#E9B949"></rect><rect x="12" y="30" width="6" height="6" fill="#E9B949"></rect><rect x="12" y="36" width="6" height="6" fill="#E9B949"></rect><rect x="18" y="36" width="6" height="6" fill="#E9B949"></rect><rect x="24" y="36" width="6" height="6" fill="#E9B949"></rect></svg><svg aria-hidden="true" width="45" height="40" viewBox="0 0 45 40" shape-rendering="crispEdges" style="display: block"><rect x="10" y="0" width="5" height="5" fill="#F7C5D2"></rect><rect x="20" y="0" width="5" height="5" fill="#F7C5D2"></rect><rect x="30" y="0" width="5" height="5" fill="#F7C5D2"></rect><rect x="5" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="10" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="15" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="20" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="25" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="30" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="35" y="5" width="5" height="5" fill="#F7C5D2"></rect><rect x="5" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="10" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="15" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="20" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="25" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="30" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="35" y="10" width="5" height="5" fill="#F7C5D2"></rect><rect x="10" y="15" width="5" height="5" fill="#F7C5D2"></rect><rect x="15" y="15" width="5" height="5" fill="#F7C5D2"></rect><rect x="20" y="15" width="5" height="5" fill="#F7C5D2"></rect><rect x="25" y="15" width="5" height="5" fill="#F7C5D2"></rect><rect x="30" y="15" width="5" height="5" fill="#F7C5D2"></rect><rect x="20" y="20" width="5" height="5" fill="#5E9A6E"></rect><rect x="10" y="25" width="5" height="5" fill="#5E9A6E"></rect><rect x="20" y="25" width="5" height="5" fill="#5E9A6E"></rect><rect x="30" y="25" width="5" height="5" fill="#5E9A6E"></rect><rect x="15" y="30" width="5" height="5" fill="#5E9A6E"></rect><rect x="20" y="30" width="5" height="5" fill="#5E9A6E"></rect><rect x="25" y="30" width="5" height="5" fill="#5E9A6E"></rect><rect x="20" y="35" width="5" height="5" fill="#5E9A6E"></rect></svg></div>
+</div>
+<nav aria-label="Site" style="display: flex; gap: 6px; flex-wrap: wrap"><a class="pill" href="index.html">Home</a><a class="pill" href="blog.html">Blog</a><a class="pill" href="habits.html">Habit Bakery</a><a class="pill" href="cove.html">Seal Cove</a><a class="pill on" href="athan.html" aria-current="page">Athan</a><a class="pill" href="playbill.html">Playbill</a></nav>
+</div>
+</header>
+<main style="max-width: 1160px; margin: 0 auto; padding: 36px 24px 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 640px">
+<span class="px" style="font-size: 14px; letter-spacing: 2px; color: #7A5A12">THE COURTYARD</span>
+<h1 class="px" style="margin: 0; font-size: 40px; line-height: 1.05">Five lanterns, one day.</h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">Each prayer is a lantern in the arch. The next one glows; the ones already prayed rest. Tap a lantern for a reminder.</p>
+</div>
+<div style="background: #FFFFFF; border: 3px solid #F2DF9C; border-radius: 18px; padding: 12px 18px; display: flex; flex-direction: column; gap: 2px">
+<span lang="ar" style="font-family: 'Amiri', serif; font-size: 22px; color: #7A5A12">جمادى الآخرة ١٤٤٨</span>
+<span style="font-size: 14px">Jumada al-Akhirah 1448 · [City]</span>
+</div>
+</div>
+
+<section aria-label="Prayer times" style="position: relative; background: #2F4A5E; border-radius: 360px 360px 28px 28px / 220px 220px 28px 28px; padding: 120px 28px 36px; overflow: hidden; border: 10px solid #F6D3DC; box-shadow: 0 0 0 6px #9CCBA8">
+<svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0; opacity: .18">
+<defs>
+<pattern id="stars8" width="90" height="90" patternUnits="userSpaceOnUse">
+<rect x="30" y="30" width="30" height="30" fill="none" stroke="#FFE3A8" stroke-width="2"></rect><rect x="30" y="30" width="30" height="30" fill="none" stroke="#FFE3A8" stroke-width="2" transform="rotate(45 45 45)"></rect><circle cx="45" cy="45" r="5" fill="none" stroke="#FFE3A8" stroke-width="1.5"></circle>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#stars8)"></rect>
+</svg>
+<div aria-hidden="true" style="position: absolute; top: 46px; left: 50%; transform: translateX(-50%)"><svg aria-hidden="true" width="49" height="49" viewBox="0 0 49 49" shape-rendering="crispEdges" style="display: block"><rect x="14" y="0" width="7" height="7" fill="#E9B949"></rect><rect x="21" y="0" width="7" height="7" fill="#E9B949"></rect><rect x="28" y="0" width="7" height="7" fill="#E9B949"></rect><rect x="7" y="7" width="7" height="7" fill="#E9B949"></rect><rect x="14" y="7" width="7" height="7" fill="#E9B949"></rect><rect x="0" y="14" width="7" height="7" fill="#E9B949"></rect><rect x="7" y="14" width="7" height="7" fill="#E9B949"></rect><rect x="0" y="21" width="7" height="7" fill="#E9B949"></rect><rect x="7" y="21" width="7" height="7" fill="#E9B949"></rect><rect x="0" y="28" width="7" height="7" fill="#E9B949"></rect><rect x="7" y="28" width="7" height="7" fill="#E9B949"></rect><rect x="7" y="35" width="7" height="7" fill="#E9B949"></rect><rect x="14" y="35" width="7" height="7" fill="#E9B949"></rect><rect x="14" y="42" width="7" height="7" fill="#E9B949"></rect><rect x="21" y="42" width="7" height="7" fill="#E9B949"></rect><rect x="28" y="42" width="7" height="7" fill="#E9B949"></rect></svg></div>
+<div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px">
+<sc-for list="{{prayers}}" as="p" hint-placeholder-count="6">
+<button class="{{p.cls}}" onClick="{{p.toggle}}" aria-pressed="{{p.remind}}" aria-label="{{p.aria}}">
+<span aria-hidden="true" style="width: 2px; height: {{p.rope}}px; background: #E8D9B5"></span>
+<sc-if value="{{p.lit}}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="42" height="60" viewBox="0 0 42 60" shape-rendering="crispEdges" style="display: block"><rect x="18" y="0" width="6" height="6" fill="#7A5A12"></rect><rect x="18" y="6" width="6" height="6" fill="#7A5A12"></rect><rect x="12" y="12" width="6" height="6" fill="#7A5A12"></rect><rect x="18" y="12" width="6" height="6" fill="#7A5A12"></rect><rect x="24" y="12" width="6" height="6" fill="#7A5A12"></rect><rect x="6" y="18" width="6" height="6" fill="#7A5A12"></rect><rect x="12" y="18" width="6" height="6" fill="#FFD27A"></rect><rect x="18" y="18" width="6" height="6" fill="#FFD27A"></rect><rect x="24" y="18" width="6" height="6" fill="#FFD27A"></rect><rect x="30" y="18" width="6" height="6" fill="#7A5A12"></rect><rect x="0" y="24" width="6" height="6" fill="#7A5A12"></rect><rect x="6" y="24" width="6" height="6" fill="#FFD27A"></rect><rect x="12" y="24" width="6" height="6" fill="#FFD27A"></rect><rect x="18" y="24" width="6" height="6" fill="#FFF6F0"></rect><rect x="24" y="24" width="6" height="6" fill="#FFD27A"></rect><rect x="30" y="24" width="6" height="6" fill="#FFD27A"></rect><rect x="36" y="24" width="6" height="6" fill="#7A5A12"></rect><rect x="0" y="30" width="6" height="6" fill="#7A5A12"></rect><rect x="6" y="30" width="6" height="6" fill="#FFD27A"></rect><rect x="12" y="30" width="6" height="6" fill="#FFD27A"></rect><rect x="18" y="30" width="6" height="6" fill="#FFF6F0"></rect><rect x="24" y="30" width="6" height="6" fill="#FFD27A"></rect><rect x="30" y="30" width="6" height="6" fill="#FFD27A"></rect><rect x="36" y="30" width="6" height="6" fill="#7A5A12"></rect><rect x="0" y="36" width="6" height="6" fill="#7A5A12"></rect><rect x="6" y="36" width="6" height="6" fill="#FFD27A"></rect><rect x="12" y="36" width="6" height="6" fill="#FFD27A"></rect><rect x="18" y="36" width="6" height="6" fill="#FFD27A"></rect><rect x="24" y="36" width="6" height="6" fill="#FFD27A"></rect><rect x="30" y="36" width="6" height="6" fill="#FFD27A"></rect><rect x="36" y="36" width="6" height="6" fill="#7A5A12"></rect><rect x="6" y="42" width="6" height="6" fill="#7A5A12"></rect><rect x="12" y="42" width="6" height="6" fill="#FFD27A"></rect><rect x="18" y="42" width="6" height="6" fill="#FFD27A"></rect><rect x="24" y="42" width="6" height="6" fill="#FFD27A"></rect><rect x="30" y="42" width="6" height="6" fill="#7A5A12"></rect><rect x="12" y="48" width="6" height="6" fill="#7A5A12"></rect><rect x="18" y="48" width="6" height="6" fill="#7A5A12"></rect><rect x="24" y="48" width="6" height="6" fill="#7A5A12"></rect><rect x="18" y="54" width="6" height="6" fill="#7A5A12"></rect></svg></sc-if>
+<sc-if value="{{p.unlit}}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="42" height="60" viewBox="0 0 42 60" shape-rendering="crispEdges" style="display: block"><rect x="18" y="0" width="6" height="6" fill="#9C8A78"></rect><rect x="18" y="6" width="6" height="6" fill="#9C8A78"></rect><rect x="12" y="12" width="6" height="6" fill="#9C8A78"></rect><rect x="18" y="12" width="6" height="6" fill="#9C8A78"></rect><rect x="24" y="12" width="6" height="6" fill="#9C8A78"></rect><rect x="6" y="18" width="6" height="6" fill="#9C8A78"></rect><rect x="12" y="18" width="6" height="6" fill="#EADFD0"></rect><rect x="18" y="18" width="6" height="6" fill="#EADFD0"></rect><rect x="24" y="18" width="6" height="6" fill="#EADFD0"></rect><rect x="30" y="18" width="6" height="6" fill="#9C8A78"></rect><rect x="0" y="24" width="6" height="6" fill="#9C8A78"></rect><rect x="6" y="24" width="6" height="6" fill="#EADFD0"></rect><rect x="12" y="24" width="6" height="6" fill="#EADFD0"></rect><rect x="18" y="24" width="6" height="6" fill="#F6F0E8"></rect><rect x="24" y="24" width="6" height="6" fill="#EADFD0"></rect><rect x="30" y="24" width="6" height="6" fill="#EADFD0"></rect><rect x="36" y="24" width="6" height="6" fill="#9C8A78"></rect><rect x="0" y="30" width="6" height="6" fill="#9C8A78"></rect><rect x="6" y="30" width="6" height="6" fill="#EADFD0"></rect><rect x="12" y="30" width="6" height="6" fill="#EADFD0"></rect><rect x="18" y="30" width="6" height="6" fill="#F6F0E8"></rect><rect x="24" y="30" width="6" height="6" fill="#EADFD0"></rect><rect x="30" y="30" width="6" height="6" fill="#EADFD0"></rect><rect x="36" y="30" width="6" height="6" fill="#9C8A78"></rect><rect x="0" y="36" width="6" height="6" fill="#9C8A78"></rect><rect x="6" y="36" width="6" height="6" fill="#EADFD0"></rect><rect x="12" y="36" width="6" height="6" fill="#EADFD0"></rect><rect x="18" y="36" width="6" height="6" fill="#EADFD0"></rect><rect x="24" y="36" width="6" height="6" fill="#EADFD0"></rect><rect x="30" y="36" width="6" height="6" fill="#EADFD0"></rect><rect x="36" y="36" width="6" height="6" fill="#9C8A78"></rect><rect x="6" y="42" width="6" height="6" fill="#9C8A78"></rect><rect x="12" y="42" width="6" height="6" fill="#EADFD0"></rect><rect x="18" y="42" width="6" height="6" fill="#EADFD0"></rect><rect x="24" y="42" width="6" height="6" fill="#EADFD0"></rect><rect x="30" y="42" width="6" height="6" fill="#9C8A78"></rect><rect x="12" y="48" width="6" height="6" fill="#9C8A78"></rect><rect x="18" y="48" width="6" height="6" fill="#9C8A78"></rect><rect x="24" y="48" width="6" height="6" fill="#9C8A78"></rect><rect x="18" y="54" width="6" height="6" fill="#9C8A78"></rect></svg></sc-if>
+<strong class="px" style="font-size: 18px">{{p.name}}</strong>
+<span lang="ar" style="font-family: 'Amiri', serif; font-size: 20px">{{p.ar}}</span>
+<span class="px" style="font-size: 22px">{{p.time}}</span>
+<span style="font-size: 12px">{{p.status}}</span>
+</button>
+</sc-for>
+</div>
+<p style="position: relative; margin: 20px 0 0; text-align: center; font-size: 13px; color: #E8E0D2">Sample times shown · live times come from the Aladhan API for your city</p>
+<div aria-hidden="true" style="position: relative; margin: 18px -28px -36px"><svg aria-hidden="true" width="100%" height="200" viewBox="0 0 1000 200" preserveAspectRatio="xMidYMax meet" style="display: block"><rect x="0" y="170" width="1000" height="30" fill="#22374A"></rect><rect x="300" y="120" width="400" height="60" fill="#22374A"></rect><path d="M430,122 C430,38.0 486.0,45.0 500,10.0 C514.0,45.0 570,38.0 570,122Z" fill="#22374A"></path><path d="M346,126 C346,85.2 373.2,88.6 380,71.6 C386.8,88.6 414,85.2 414,126Z" fill="#22374A"></path><path d="M586,126 C586,85.2 613.2,88.6 620,71.6 C626.8,88.6 654,85.2 654,126Z" fill="#22374A"></path><path d="M298,140 C298,113.6 315.6,115.8 320,104.8 C324.4,115.8 342,113.6 342,140Z" fill="#22374A"></path><path d="M658,140 C658,113.6 675.6,115.8 680,104.8 C684.4,115.8 702,113.6 702,140Z" fill="#22374A"></path><rect x="244" y="55" width="12" height="120" fill="#22374A"></rect><rect x="240" y="100.6" width="20" height="5" fill="#22374A"></rect><polygon points="243,55 257,55 250,29" fill="#22374A"></polygon><circle cx="250" cy="25" r="3" fill="#FFD27A"></circle><rect x="744" y="55" width="12" height="120" fill="#22374A"></rect><rect x="740" y="100.6" width="20" height="5" fill="#22374A"></rect><polygon points="743,55 757,55 750,29" fill="#22374A"></polygon><circle cx="750" cy="25" r="3" fill="#FFD27A"></circle><rect x="174" y="95" width="12" height="80" fill="#22374A"></rect><rect x="170" y="125.4" width="20" height="5" fill="#22374A"></rect><polygon points="173,95 187,95 180,69" fill="#22374A"></polygon><circle cx="180" cy="65" r="3" fill="#FFD27A"></circle><rect x="814" y="95" width="12" height="80" fill="#22374A"></rect><rect x="810" y="125.4" width="20" height="5" fill="#22374A"></rect><polygon points="813,95 827,95 820,69" fill="#22374A"></polygon><circle cx="820" cy="65" r="3" fill="#FFD27A"></circle><path d="M500,10 L500,0" stroke="#FFD27A" stroke-width="2"></path><g transform="translate(500,0) scale(0.35,0.35)"><path d="M8,-22 A23,23 0 1,0 8,22 A18,18 0 1,1 8,-22Z" fill="#FFD27A"></path><polygon points="20,-6 22.5,0 29,0 24,4 26,11 20,7 14,11 16,4 11,0 17.5,0" fill="#FFD27A"></polygon></g><path d="M320,166 L320,150 Q327,140 334,150 L334,166Z" fill="#FFD27A" opacity=".75"></path><path d="M350,166 L350,150 Q357,140 364,150 L364,166Z" fill="#FFD27A" opacity=".75"></path><path d="M380,166 L380,150 Q387,140 394,150 L394,166Z" fill="#FFD27A" opacity=".75"></path><path d="M410,166 L410,150 Q417,140 424,150 L424,166Z" fill="#FFD27A" opacity=".75"></path><path d="M440,166 L440,150 Q447,140 454,150 L454,166Z" fill="#FFD27A" opacity=".75"></path><path d="M470,166 L470,150 Q477,140 484,150 L484,166Z" fill="#FFD27A" opacity=".75"></path><path d="M500,166 L500,150 Q507,140 514,150 L514,166Z" fill="#FFD27A" opacity=".75"></path><path d="M530,166 L530,150 Q537,140 544,150 L544,166Z" fill="#FFD27A" opacity=".75"></path><path d="M560,166 L560,150 Q567,140 574,150 L574,166Z" fill="#FFD27A" opacity=".75"></path><path d="M590,166 L590,150 Q597,140 604,150 L604,166Z" fill="#FFD27A" opacity=".75"></path><path d="M620,166 L620,150 Q627,140 634,150 L634,166Z" fill="#FFD27A" opacity=".75"></path><path d="M650,166 L650,150 Q657,140 664,150 L664,166Z" fill="#FFD27A" opacity=".75"></path><path d="M680,166 L680,150 Q687,140 694,150 L694,166Z" fill="#FFD27A" opacity=".75"></path><rect x="0" y="120" width="140" height="60" fill="#22374A"></rect><rect x="860" y="130" width="140" height="50" fill="#22374A"></rect><path d="M44,122 C44,90.8 64.8,93.4 70,80.4 C75.2,93.4 96,90.8 96,122Z" fill="#22374A"></path><path d="M908,132 C908,105.6 925.6,107.8 930,96.8 C934.4,107.8 952,105.6 952,132Z" fill="#22374A"></path></svg></div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+
+<section aria-label="Tasbih counter" style="flex: 2 1 460px; background: #FFFFFF; border-radius: 28px; padding: 24px; border: 3px solid #CFE3D2; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap">
+<h2 class="px" style="margin: 0; font-size: 22px; color: #2F6B45; display: flex; align-items: center; gap: 10px"><svg aria-hidden="true" width="44" height="44" viewBox="-30 -30 60 60"><circle cx="22.0" cy="0.0" r="3.4" fill="#7FB08C"></circle><circle cx="21.5" cy="4.6" r="3.4" fill="#E58FA6"></circle><circle cx="20.1" cy="8.9" r="3.4" fill="#7FB08C"></circle><circle cx="17.8" cy="12.9" r="3.4" fill="#E58FA6"></circle><circle cx="14.7" cy="16.3" r="3.4" fill="#7FB08C"></circle><circle cx="11.0" cy="19.1" r="3.4" fill="#E58FA6"></circle><circle cx="6.8" cy="20.9" r="3.4" fill="#7FB08C"></circle><circle cx="2.3" cy="21.9" r="3.4" fill="#E58FA6"></circle><circle cx="-2.3" cy="21.9" r="3.4" fill="#7FB08C"></circle><circle cx="-6.8" cy="20.9" r="3.4" fill="#E58FA6"></circle><circle cx="-11.0" cy="19.1" r="3.4" fill="#7FB08C"></circle><circle cx="-14.7" cy="16.4" r="3.4" fill="#E58FA6"></circle><circle cx="-17.8" cy="12.9" r="3.4" fill="#7FB08C"></circle><circle cx="-20.1" cy="9.0" r="3.4" fill="#E58FA6"></circle><circle cx="-21.5" cy="4.6" r="3.4" fill="#7FB08C"></circle><circle cx="-22.0" cy="0.0" r="3.4" fill="#E58FA6"></circle><circle cx="-21.5" cy="-4.6" r="3.4" fill="#7FB08C"></circle><circle cx="-20.1" cy="-8.9" r="3.4" fill="#E58FA6"></circle><circle cx="-17.8" cy="-12.9" r="3.4" fill="#7FB08C"></circle><circle cx="-14.7" cy="-16.3" r="3.4" fill="#E58FA6"></circle><circle cx="-11.0" cy="-19.0" r="3.4" fill="#7FB08C"></circle><circle cx="-6.8" cy="-20.9" r="3.4" fill="#E58FA6"></circle><circle cx="-2.3" cy="-21.9" r="3.4" fill="#7FB08C"></circle><circle cx="2.3" cy="-21.9" r="3.4" fill="#E58FA6"></circle><circle cx="6.8" cy="-20.9" r="3.4" fill="#7FB08C"></circle><circle cx="11.0" cy="-19.1" r="3.4" fill="#E58FA6"></circle><circle cx="14.7" cy="-16.4" r="3.4" fill="#7FB08C"></circle><circle cx="17.8" cy="-13.0" r="3.4" fill="#E58FA6"></circle><circle cx="20.1" cy="-9.0" r="3.4" fill="#7FB08C"></circle><circle cx="21.5" cy="-4.6" r="3.4" fill="#E58FA6"></circle><path d="M0,22 L0,30" stroke="#C9A043" stroke-width="2"></path></svg>Tasbih</h2>
+<span style="font-size: 14px">round {{round}} of 3 · {{total}} / 99</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 0">
+<span lang="ar" style="font-family: 'Amiri', serif; font-size: 40px; color: #A3405F">{{dhikrAr}}</span>
+<span style="font-size: 16px; font-weight: 700">{{dhikr}}</span>
+</div>
+<div aria-hidden="true" style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center">
+<sc-for list="{{beads}}" as="b" hint-placeholder-count="33">
+<span class="{{b}}"></span>
+</sc-for>
+</div>
+<div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap">
+<button class="btn" style="background: #3E7A52; min-width: 160px" onClick="{{tap}}">Count +1</button>
+<button class="ghost" onClick="{{reset}}">Reset</button>
+</div>
+</section>
+
+<section aria-label="Ayah of the day" style="flex: 1 1 300px; background: #FFF6D6; border-radius: 28px; padding: 24px; border: 3px solid #F2DF9C; display: flex; flex-direction: column; gap: 12px; justify-content: center">
+<div aria-hidden="true" style="display: flex; gap: 6px; align-items: flex-end"><svg width="120" height="70" viewBox="-60 -70 120 80"><g transform="translate(-36,8) rotate(-12) scale(0.55,0.55)"><path d="M0,0 C-2,-30 2,-50 0,-70" stroke="#5E9A6E" stroke-width="3" fill="none"></path>
+<path d="M0,-12 C-20,-20 -28,-42 -22,-58 C-12,-42 -6,-28 0,-20Z" fill="#7FB08C"></path>
+<path d="M0,-22 C18,-30 24,-48 18,-60 C10,-46 6,-36 0,-30Z" fill="#7FB08C"></path>
+<path d="M0,-68 C-15,-70 -19,-90 -12,-106 C-8,-96 -4,-93 0,-101 C4,-93 8,-96 12,-106 C19,-90 15,-70 0,-68Z" fill="#E58FA6"></path>
+<path d="M0,-72 C-5,-78 -5,-90 0,-98 C5,-90 5,-78 0,-72Z" fill="#FFF6F0" opacity=".55"></path></g><g transform="translate(0,8) scale(0.7,0.7)"><path d="M0,0 C1,-20 -1,-40 0,-58" stroke="#5E9A6E" stroke-width="3" fill="none"></path>
+<path d="M0,-20 C12,-24 18,-34 16,-42 C8,-36 4,-30 0,-28Z" fill="#7FB08C"></path>
+<path d="M-6,-58 L6,-58 L3,-66 L-3,-66Z" fill="#7FB08C"></path>
+<path d="M-20,-66 Q-26,-84 -14,-82 Q-14,-98 -4,-90 Q0,-102 4,-90 Q14,-98 14,-82 Q26,-84 20,-66Z" fill="#F7C5D2"></path>
+<path d="M-12,-70 Q-14,-80 -6,-78 Q-2,-88 2,-78 Q10,-80 12,-70Z" fill="#E58FA6" opacity=".6"></path></g><g transform="translate(36,8) rotate(12) scale(0.55,0.55)"><path d="M0,0 C-2,-30 2,-50 0,-70" stroke="#5E9A6E" stroke-width="3" fill="none"></path>
+<path d="M0,-12 C-20,-20 -28,-42 -22,-58 C-12,-42 -6,-28 0,-20Z" fill="#7FB08C"></path>
+<path d="M0,-22 C18,-30 24,-48 18,-60 C10,-46 6,-36 0,-30Z" fill="#7FB08C"></path>
+<path d="M0,-68 C-15,-70 -19,-90 -12,-106 C-8,-96 -4,-93 0,-101 C4,-93 8,-96 12,-106 C19,-90 15,-70 0,-68Z" fill="#7FB08C"></path>
+<path d="M0,-72 C-5,-78 -5,-90 0,-98 C5,-90 5,-78 0,-72Z" fill="#FFF6F0" opacity=".55"></path></g></svg></div>
+<span class="px" style="font-size: 13px; letter-spacing: 1px; color: #7A5A12">AYAH OF THE DAY</span>
+<span lang="ar" dir="rtl" style="font-family: 'Amiri', serif; font-size: 34px; line-height: 1.6">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</span>
+<span style="font-size: 16px; line-height: 1.5">"For indeed, with hardship comes ease."</span>
+<span style="font-size: 14px; color: #6B4A5E">Ash-Sharh 94:5 · rotates daily from alquran.cloud</span>
+</section>
+
+</div>
+</main>
+<footer style="max-width: 1160px; margin: 48px auto 0; padding: 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; border-top: 3px dashed #E3B9C6; font-size: 14px; color: #6B4A5E">
+<span style="display: flex; gap: 8px; align-items: center"><svg aria-hidden="true" width="21" height="18" viewBox="0 0 21 18" shape-rendering="crispEdges" style="display: block"><rect x="3" y="0" width="3" height="3" fill="#A3405F"></rect><rect x="6" y="0" width="3" height="3" fill="#A3405F"></rect><rect x="12" y="0" width="3" height="3" fill="#A3405F"></rect><rect x="15" y="0" width="3" height="3" fill="#A3405F"></rect><rect x="0" y="3" width="3" height="3" fill="#A3405F"></rect><rect x="3" y="3" width="3" height="3" fill="#F6A8BC"></rect><rect x="6" y="3" width="3" height="3" fill="#F6A8BC"></rect><rect x="9" y="3" width="3" height="3" fill="#A3405F"></rect><rect x="12" y="3" width="3" height="3" fill="#F6A8BC"></rect><rect x="15" y="3" width="3" height="3" fill="#F6A8BC"></rect><rect x="18" y="3" width="3" height="3" fill="#A3405F"></rect><rect x="0" y="6" width="3" height="3" fill="#A3405F"></rect><rect x="3" y="6" width="3" height="3" fill="#F6A8BC"></rect><rect x="6" y="6" width="3" height="3" fill="#F6A8BC"></rect><rect x="9" y="6" width="3" height="3" fill="#F6A8BC"></rect><rect x="12" y="6" width="3" height="3" fill="#F6A8BC"></rect><rect x="15" y="6" width="3" height="3" fill="#F6A8BC"></rect><rect x="18" y="6" width="3" height="3" fill="#A3405F"></rect><rect x="3" y="9" width="3" height="3" fill="#A3405F"></rect><rect x="6" y="9" width="3" height="3" fill="#F6A8BC"></rect><rect x="9" y="9" width="3" height="3" fill="#F6A8BC"></rect><rect x="12" y="9" width="3" height="3" fill="#F6A8BC"></rect><rect x="15" y="9" width="3" height="3" fill="#A3405F"></rect><rect x="6" y="12" width="3" height="3" fill="#A3405F"></rect><rect x="9" y="12" width="3" height="3" fill="#F6A8BC"></rect><rect x="12" y="12" width="3" height="3" fill="#A3405F"></rect><rect x="9" y="15" width="3" height="3" fill="#A3405F"></rect></svg> baked with love in [City] · waddle on ✿</span>
+<a href="cove.html" class="px">leave a note in the cove →</a>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview": {"width": 1280, "height": 1900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.persistKeys = ['count', 'remind'];
+    this.state = { count: 0, remind: { 3: true } };
+  }
+  renderVals() {
+    var self = this;
+    var nextIdx = 3;
+    var ropes = [30, 60, 20, 50, 34, 64];
+    var list = [
+      ['Fajr', 'الفجر', '04:53'], ['Sunrise', 'الشروق', '06:17'], ['Dhuhr', 'الظهر', '11:33'],
+      ['Asr', 'العصر', '14:35'], ['Maghrib', 'المغرب', '16:54'], ['Isha', 'العشاء', '18:13']
+    ];
+    var remind = this.state.remind;
+    var prayers = list.map(function (p, i) {
+      var lit = i === nextIdx;
+      var past = i < nextIdx;
+      var on = !!remind[i];
+      return {
+        name: p[0], ar: p[1], time: p[2], rope: ropes[i], lit: lit, unlit: !lit, remind: on,
+        cls: 'lantern' + (lit ? ' next' : '') + (past ? ' past' : '') + (on ? ' bell' : ''),
+        status: lit ? 'next · glowing' : past ? 'prayed ✓' : (on ? 'reminder on ♥' : 'tap for reminder'),
+        aria: p[0] + ' at ' + p[2] + (on ? ', reminder on' : ', reminder off'),
+        toggle: function () { var n = Object.assign({}, self.state.remind); n[i] = !n[i]; self.setState({ remind: n }); }
+      };
+    });
+    var phrases = [['SubhanAllah', 'سُبْحَانَ ٱللَّٰهِ'], ['Alhamdulillah', 'ٱلْحَمْدُ لِلَّٰهِ'], ['Allahu Akbar', 'ٱللَّٰهُ أَكْبَرُ']];
+    var c = this.state.count;
+    var done = c >= 99;
+    var r = done ? 2 : Math.floor(c / 33);
+    var inRound = done ? 33 : c % 33;
+    var beads = [];
+    for (var b = 0; b < 33; b++) beads.push('bead r' + r + (b < inRound ? ' on' : ''));
+    return {
+      prayers: prayers,
+      beads: beads,
+      round: r + 1,
+      total: c,
+      dhikr: done ? 'Complete — may it be accepted' : phrases[r][0],
+      dhikrAr: done ? 'تَقَبَّلَ ٱللَّٰهُ' : phrases[r][1],
+      tap: function () { if (self.state.count < 99) self.setState({ count: self.state.count + 1 }); },
+      reset: function () { self.setState({ count: 0 }); }
+    };
+  }
+}
+
+</script>
+</body>
+</html>
